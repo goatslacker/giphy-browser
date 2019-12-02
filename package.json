@@ -1,0 +1,53 @@
+{
+  "name": "giphy-browser",
+  "version": "1.0.0",
+  "description": "Essentially a small Giphy browser",
+  "main": "index.js",
+  "scripts": {
+    "build": "parcel build index.html",
+    "lint": "eslint --ext .js \"src/**/*.{ts,tsx}\"",
+    "pretty": "prettier \"src/**/*.{ts,tsx}\" --write",
+    "start": "parcel serve index.html",
+    "test": "yarn run pretty && yarn run lint && yarn run typecheck",
+    "typecheck": "tsc --jsx react --lib es2016,dom --noEmit --resolveJsonModule --esModuleInterop src/**/*.ts*"
+  },
+  "author": "Josh Perez <josh@goatslacker.com>",
+  "license": "ISC",
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^2.8.0",
+    "@typescript-eslint/parser": "^2.8.0",
+    "eslint": "6.1.0",
+    "eslint-config-airbnb": "18.0.1",
+    "eslint-config-prettier": "^6.7.0",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-prettier": "^3.1.1",
+    "eslint-plugin-react": "^7.14.3",
+    "eslint-plugin-react-hooks": "^1.7.0",
+    "parcel-bundler": "^1.12.4",
+    "prettier": "^1.19.1",
+    "typescript": "^3.6.3"
+  },
+  "dependencies": {
+    "@giphy/js-brand": "^1.1.6",
+    "@giphy/js-fetch-api": "^1.4.1",
+    "@giphy/js-types": "^2.0.0",
+    "@giphy/js-util": "^1.5.1",
+    "@giphy/react-components": "^0.3.4",
+    "@types/react": "^16.9.11",
+    "@types/react-dom": "^16.9.4",
+    "emotion": "^10.0.23",
+    "history": "^4.10.1",
+    "prop-types": "^15.7.2",
+    "react": "^16.10.1",
+    "react-dom": "^16.10.1",
+    "react-modal": "^3.11.1",
+    "react-redux": "^7.1.3",
+    "react-spring": "^8.0.27",
+    "redux": "^4.0.4",
+    "redux-thunk": "^2.3.0",
+    "reselect": "^4.0.0",
+    "throttle-debounce": "^2.1.0",
+    "trim-right": "^1.0.1"
+  }
+}

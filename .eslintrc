@@ -1,0 +1,16 @@
+{
+  "extends": ["airbnb", "prettier", "prettier/react", "plugin:@typescript-eslint/recommended"],
+  "plugins": ["prettier", "@typescript-eslint"],
+  "parser": "@typescript-eslint/parser",
+  "env": {
+    "browser": true
+  },
+  "rules": {
+    "import/no-unresolved": "off",
+    "react/jsx-filename-extension": ["error", { "extensions": [".tsx"] }],
+    "react/sort-comp": "off",
+    "react/state-in-constructor": "off",
+    "@typescript-eslint/camelcase": "warn",
+    "@typescript-eslint/no-unused-vars": "error"
+  }
+}

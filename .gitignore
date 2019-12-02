@@ -1,0 +1,6 @@
+.cache/
+yarn.lock
+Notes.md
+secrets.json
+node_modules/
+dist/
